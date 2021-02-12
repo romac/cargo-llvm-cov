@@ -212,8 +212,6 @@ fn main() -> Result<()> {
                 "--",
                 "show",
                 &format!("-instr-profile={}", profdata_file.display()),
-                "-show-line-counts-or-regions",
-                "-show-instantiations",
                 "-ignore-filename-regex",
                 r".cargo/registry|.rustup/toolchains|test(s)?/",
                 "-Xdemangler=rustfilt",
